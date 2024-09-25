@@ -1,5 +1,5 @@
 [dependencies]
-  coo = { git="https://gitcode.com/zsy619/cjweave.git", branch="main" }
+  cjweave = { git="https://gitcode.com/zsy619/cjweave.git", branch="main" }
 
 [package]
   cjc-version = "0.55.3"
