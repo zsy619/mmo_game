@@ -1,0 +1,7 @@
+syntax = "proto3"; // 指定版本
+
+package pb; // 包名
+
+message SyncPid {
+    int32 Pid = 1; // 玩家id
+}  

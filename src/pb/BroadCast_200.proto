@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb;
+
+// 广播消息
+message BroadCast {
+	int32 Pid = 1; //  
+	int32 Tp = 2; //  1 世界聊天 2 坐标 3 动作 4 移动之后的坐标信息更新
+	oneof Data {
+		string Content = 3; // 聊天内容
+		Position P = 4; // 坐标
+		int32 ActionData = 5; // 动作数据
+	}
+}

@@ -1,0 +1,15 @@
+[dependencies]
+  coo = { git="https://gitcode.com/zsy619/cjweave.git", branch="main" }
+
+[package]
+  cjc-version = "0.55.3"
+  compile-option = ""
+  description = "MMO游戏示例"
+  link-option = ""
+  name = "mmo_game"
+  output-type = "executable"
+  override-compile-option = ""
+  src-dir = ""
+  target-dir = ""
+  version = "1.0.0"
+  package-configuration = {}

@@ -1,0 +1,23 @@
+syntax = "proto3"; // 指定版本
+option go_package="./;pb";
+
+package pb; // 包名
+
+message Person {
+	string name = 1; // 姓名
+	int32 age = 2; // 年龄
+	repeated string emails = 3; // 电子邮件
+	repeated PhoneNumber phones = 4; // 电话
+}
+
+enum PhoneType { // 枚举类型
+	UNKNOWN = 0;
+	MOBILE = 1;
+	HOME = 2;
+	WORK = 3;
+}
+
+message PhoneNumber {
+	string number = 1; // 电话号码
+	PhoneType type = 2; // 电话类型
+}
